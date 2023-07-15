@@ -1,0 +1,23 @@
+{
+  "name": "ep2",
+  "version": "1.0.0",
+  "description": "ep02 assignment",
+  "scripts": {
+    "test": "jest",
+    "jaadu":"parcel index.html",
+    "builder":"npx parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.9.3",
+    "process": "^0.11.10"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserlists":[
+    "last 8 versions"
+  ]
+}
