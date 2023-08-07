@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 10px;
+}
+.bg-dark {
+  background: #fff3e0;
+}
+.container {
+  display: flex;
+  justify-content:space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo {
+  height: 100px;
+}
+.search {
+  width: 100%;
+}
+button{
+    background:orange;
+    color:white;
+    border:none;
+    padding:2px;
+}
+.li-items{
+    display: flex;
+    justify-content: space-around;
+}
+.li-items li{
+    list-style-type:none;
+}
+.li-items li a{
+    padding:10px;
+}
