@@ -1,0 +1,25 @@
+{
+  "name": "ep04",
+  "version": "1.0.0",
+  "description": "ep04 assignment",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "npx parcel build index.html",
+    "test": "jest"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.2",
+    "parcel": "^2.9.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "browserlists": [
+    "last 8 versions"
+  ],
+  "devDependencies": {
+    "process": "^0.11.10"
+  }
+}
