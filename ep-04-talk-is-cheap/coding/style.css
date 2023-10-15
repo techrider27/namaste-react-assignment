@@ -9,12 +9,6 @@
   background: black;
   padding: 10px 80px;
 }
-.res-container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
-}
 .logo {
   max-width: 100%;
   width: 90px;
@@ -50,7 +44,7 @@
 }
 .res-card {
   background: #ffffff;
-  width: 280px;
+  width: 250px;
   height: auto;
   padding: 10px;
   border-radius: 10px;
@@ -60,7 +54,7 @@
 }
 .res-card h3,
 .res-card h4 {
-  -webkit-line-clamp: 2;
+  -webkit-line-clamp: 1;
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
   margin-bottom: 10px;
