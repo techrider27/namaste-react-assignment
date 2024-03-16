@@ -1,34 +1,14 @@
 import RestaurantCard from "./RestaurantCard";
 import Shimmer from "./Shimmer";
+import resList from "../utils/mockData";
 import { useEffect, useState } from "react";
 
 const Body = () => {
   //local state variable
-  const [listOfRestaurants, setListOfRestaurant] = useState([]);
-  const [filteredRestaurant, setFilteredRestaurant] = useState([]);
+  const [listOfRestaurants, setListOfRestaurant] = useState(resList);
+  const [filteredRestaurant, setFilteredRestaurant] = useState(resList);
   const [searchText, setSearchText] = useState("");
 
-  console.log("body");
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  const fetchData = async () => {
-    const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=21.2513844&lng=81.62964130000002&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
-    const toJson = await data.json();
-    // console.log(toJson);
-    setListOfRestaurant(
-      toJson?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants
-    );
-    setFilteredRestaurant(
-      toJson?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants
-    );
-  };
 
   return listOfRestaurants.length === 0 ? (
     <Shimmer />
@@ -76,7 +56,7 @@ const Body = () => {
         <button
           className="filter-btn"
           onClick={() => {
-            setListOfRestaurant(resList);
+            setFilteredRestaurant(listOfRestaurants);
           }}
         >
           reset
